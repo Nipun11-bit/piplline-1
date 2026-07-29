@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('Clone') {
             steps {
-                checkout scm
+               git branch: 'main', url: 'https://github.com/Nipun11-bit/piplline-1.git'
             }
         }
 
